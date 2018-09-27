@@ -11,13 +11,17 @@ export class MyApp {
 
   rootPage: string = "HomePage";
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, icon: string, separatorLevel: number}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     this.pages = [
-      { title: "Home", component: "HomePage" }
+      { title: "Home", component: "HomePage", icon: "home", separatorLevel: 1 },
+      { title: "Blog", component: "BlogPage", icon: "edit", separatorLevel: 1 },
+      { title: "Best Unknown Company", component: "BestUnknownCompanyPage", icon: "question-circle", separatorLevel: 1 },
+      { title: "About", component: "AboutPage", icon: "info-circle", separatorLevel: 1 },
+      { title: "Admin", component: "AdminPage", icon: "cogs", separatorLevel: 1 },
     ];
   }
 
