@@ -5,7 +5,17 @@ import { LocationStrategy, PathLocationStrategy } from "@angular/common";
 import { MyApp } from "./app.component";
 import { StatusBar } from "@ionic-native/status-bar";
 import { SplashScreen } from "@ionic-native/splash-screen";
-import { AuthProvider } from '../providers/auth/auth';
+import { AuthProvider } from "../providers/auth/auth";
+import { PdfProvider } from '../providers/pdf/pdf';
+
+export const firebaseConfig = {
+  apiKey: "AIzaSyBiMhYll4VK-0gzCS5wmDYVGStJUUpinjc",
+  authDomain: "chris-patrick-ryan.firebaseapp.com",
+  databaseURL: "https://chris-patrick-ryan.firebaseio.com",
+  projectId: "chris-patrick-ryan",
+  storageBucket: "chris-patrick-ryan.appspot.com",
+  messagingSenderId: "600854526417"
+};
 
 @NgModule({
   declarations: [MyApp],
@@ -17,6 +27,7 @@ import { AuthProvider } from '../providers/auth/auth';
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     AuthProvider,
+    PdfProvider
     //{ provide: LocationStrategy, useClass: PathLocationStrategy }
   ]
 })

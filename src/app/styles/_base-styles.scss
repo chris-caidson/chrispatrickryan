@@ -1,3 +1,54 @@
 * {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-size: $base-font-size;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: $primary-color;
+  font-size: $base-font-size + 3rem;
+  margin: 0;
+}
+
+h2 {
+  color: $secondary-color-dark;
+  font-size: $base-font-size + 2.5rem;
+  margin: 0;
+}
+
+h3 {
+  color: $tertiary-color;
+  font-size: $base-font-size + 2rem;
+  margin: 0;
+}
+
+h4 {
+  color: $dark-gray;
+  font-size: $base-font-size + 1.5rem;
+  margin: 0;
+}
+
+h5 {
+  color: $dark-gray;
+  font-size: $base-font-size + 1rem;
+  margin: 0;
+}
+
+h6 {
+  color: $dark-gray;
+  font-size: $base-font-size + 0.5rem;
+  margin: 0;
+}
+
+a, li, h1, h2, h3, h4, h5, h6, p, span {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+a, .link-span {
+  color: $primary-color;
+  cursor: pointer;
 }
