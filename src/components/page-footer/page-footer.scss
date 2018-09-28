@@ -1,3 +1,42 @@
 page-footer {
+  footer {
+    background-color: #BDBBB6;
+    padding: $xlarge-spacing;
+  }
 
+  nav {
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    max-width: 850px;
+    margin: 0 auto;
+
+    img {
+      cursor: pointer;
+      display: inline-block;
+      max-width: 200px;
+    }
+
+    .link-span {
+      color: darken($dark-gray, 25);
+      display: inline-block;
+      font-size: smaller;
+    }
+
+    .link-span:hover {
+      color: $primary-color;
+      transition: color .5s;
+    }
+  }
+
+  div {
+    color: $dark-gray;
+    margin-top: $large-spacing;
+    text-align: center;
+
+    span {
+      font-size: small;
+    }
+  }
 }

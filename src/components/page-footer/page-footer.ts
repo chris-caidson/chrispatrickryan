@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-footer',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class PageFooterComponent {
   year: number = new Date().getFullYear();
-  constructor() {}
+
+  constructor(public navCtrl: NavController) {}
+
+  openPage(pageName) {
+    this.navCtrl.setRoot(pageName);
+  }
 }
