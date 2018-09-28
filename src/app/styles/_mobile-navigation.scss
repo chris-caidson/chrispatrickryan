@@ -1,0 +1,38 @@
+.menu-icon, .toolbar-content i {
+  color: $primary-color;
+}
+
+.space-right {
+  padding-right: 10px;
+}
+
+i.fixed-width {
+  width: 25px;
+}
+
+.side-menu-button {
+  border-bottom: 1px solid #D5DEE3;
+  background: #f6f8f9;
+  background: -moz-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+  background: -webkit-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+  background: linear-gradient(to bottom, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f8f9', endColorstr='#f5f7f9', GradientType=0);
+  box-shadow: 0 0 5px #B1C2CB;
+
+  .item-inner {
+    border: none !important;
+  }
+}
+
+.menu-inner .scroll-content {
+  background-image: url('../assets/imgs/menu-bg.jpg');
+  background-repeat: repeat;
+}
+
+.toolbar-background, .toolbar-background-md{
+  background: #f6f8f9;
+  background: -moz-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+  background: -webkit-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+  background: linear-gradient(to bottom, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f8f9', endColorstr='#f5f7f9', GradientType=0);
+}

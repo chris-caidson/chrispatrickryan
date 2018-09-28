@@ -41,14 +41,24 @@ h6 {
   margin: 0;
 }
 
-a, li, h1, h2, h3, h4, h5, h6, p, span {
+a,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
 }
 
-a, .link-span {
+a,
+.link-span {
   color: $primary-color;
   cursor: pointer;
 }

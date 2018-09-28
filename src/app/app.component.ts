@@ -18,6 +18,7 @@ export class MyApp {
 
     this.pages = [
       { title: "Home", component: "HomePage", icon: "home", separatorLevel: 1 },
+      { title: "Creations", component: "CreationsPage", icon: "paint-brush", separatorLevel: 1 },
       { title: "Blog", component: "BlogPage", icon: "edit", separatorLevel: 1 },
       { title: "Best Unknown Company", component: "BestUnknownCompanyPage", icon: "question-circle", separatorLevel: 1 },
       { title: "About", component: "AboutPage", icon: "info-circle", separatorLevel: 1 },
