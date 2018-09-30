@@ -15,20 +15,21 @@ navigation {
     }
 
     span {
-      color: $dark-gray !important;
+      color: darken($dark-gray, 25) !important;
       font-size: smaller;
+      font-weight: 400;
       display: inline-block;
       margin: 0 $base-spacing;
       transition: color $default-transition-speed;
     }
 
     span:hover {
-      color: $secondary-color !important;
+      color: lighten($secondary-color, 15) !important;
       transition: color $default-transition-speed;
     }
 
     .active {
-      color: $primary-color !important;
+      color: $secondary-color !important;
       font-weight: bold;
     }
   }

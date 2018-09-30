@@ -1,3 +1,31 @@
 page-privacy-policy {
+  a, em, li, p, span, strong {
+    font-size: 12pt;
+  }
 
+  h1 {
+    font-size: 24pt;
+    margin-bottom: $small-spacing;
+  }
+
+  h2 {
+    font-size: 14pt;
+    margin-bottom: $xsmall-spacing;
+    margin-top: $base-spacing;
+  }
+
+  h3, h4 {
+    font-size: 12pt;
+    margin-bottom: $xsmall-spacing;
+    margin-top: $base-spacing;
+  }
+
+  li {
+    margin-left: $base-spacing !important;
+    padding-left: $xsmall-spacing !important;
+  }
+
+  strong {
+    color: darken($dark-gray, 35);
+  }
 }

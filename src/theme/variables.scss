@@ -4,21 +4,18 @@ $app-direction: ltr;
 @import "ionic.globals";
 
 $colors: (
-  primary:    #062F6E,
-  secondary:  #7FBC03,
+  primary:    #4d1d4d,
+  secondary:  #555b6e,
   danger:     #FF6F0F,
   light:      #fefefe,
   dark:       #555
 );
 
-$primary-color: #062F6E;
-$secondary-color: #7FBC03;
-$secondary-color-dark: #4A9C2D;
-$tertiary-color: #7D277E;
-$tertiary-color-dark: #2B184F;
-$light-gray: #CECECE;
-$dark-gray: #666666;
-$accent-color: #D2EDF1;
+$primary-color: #4d1d4d;
+$secondary-color: #555b6e;
+$tertiary-color: #9c8ca0;
+$light-gray: #ede9d8;
+$dark-gray: #bdbbb6;
 
 $base-font-size: 1.8rem;
 $base-font-color: #333;

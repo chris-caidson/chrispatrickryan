@@ -19,20 +19,20 @@ page-footer {
     }
 
     .link-span {
-      color: darken($dark-gray, 25);
+      color: darken($dark-gray, 35);
       display: inline-block;
       font-size: smaller;
       transition: color $default-transition-speed;
     }
 
     .link-span:hover {
-      color: $secondary-color-dark;
+      color: $secondary-color;
       transition: color $default-transition-speed;
     }
   }
 
   div {
-    color: $dark-gray;
+    color: darken($dark-gray, 18);
     margin-top: $large-spacing;
     text-align: center;
 
