@@ -1,3 +1,39 @@
 navigation {
+  nav {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+    margin: $base-spacing auto;
+    max-width: 1200px;
 
+    img {
+      cursor: pointer;
+      display: inline-block;
+      max-width: 200px;
+      margin-left: $large-spacing;
+    }
+
+    span {
+      color: $dark-gray !important;
+      font-size: smaller;
+      display: inline-block;
+      margin: 0 $base-spacing;
+      transition: color $default-transition-speed;
+    }
+
+    span:hover {
+      color: $secondary-color !important;
+      transition: color $default-transition-speed;
+    }
+
+    .active {
+      color: $primary-color !important;
+      font-weight: bold;
+    }
+  }
+
+  span:last-child {
+    margin-right: $large-spacing;
+  }
 }

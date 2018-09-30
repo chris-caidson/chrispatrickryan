@@ -6,7 +6,7 @@ page-footer {
 
   nav {
     display: grid;
-    grid-template-columns: 1fr  1fr 1fr 1fr;
+    grid-template-columns: auto auto auto auto auto;
     justify-items: center;
     align-items: center;
     max-width: 850px;
@@ -22,11 +22,12 @@ page-footer {
       color: darken($dark-gray, 25);
       display: inline-block;
       font-size: smaller;
+      transition: color $default-transition-speed;
     }
 
     .link-span:hover {
-      color: $primary-color;
-      transition: color .5s;
+      color: $secondary-color-dark;
+      transition: color $default-transition-speed;
     }
   }
 
@@ -38,5 +39,9 @@ page-footer {
     span {
       font-size: small;
     }
+  }
+
+  .active {
+    color: $primary-color !important;
   }
 }

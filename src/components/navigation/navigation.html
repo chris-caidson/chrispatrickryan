@@ -1,3 +1,8 @@
-<nav>
-
+<nav id="siteNav">
+  <img src="assets/imgs/logo.png" alt="Chris Patrick Ryan - Home" (click)="openPage('HomePage')" />
+  <span class="link-span" (click)="openPage('HomePage')" [class.active]="activePage=='Home'">HOME</span>
+  <span class="link-span" (click)="openPage('CreationsPage')" [class.active]="activePage=='Creations'">CREATIONS</span>
+  <span class="link-span" (click)="openPage('BestUnknownCompanyPage')" [class.active]="activePage=='Best Unknown Company'">BEST UNKNOWN COMPANY</span>
+  <span class="link-span" (click)="openPage('BlogPage')" [class.active]="activePage=='Blog'">BLOG</span>
+  <span class="link-span" (click)="openPage('AboutPage')" [class.active]="activePage=='About'">ABOUT</span>
 </nav>

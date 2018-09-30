@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
@@ -6,6 +6,7 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'page-footer.html'
 })
 export class PageFooterComponent {
+  @Input() activePage: string = "Home";
   year: number = new Date().getFullYear();
 
   constructor(public navCtrl: NavController) {}

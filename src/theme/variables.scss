@@ -29,5 +29,7 @@ $xsmall-spacing: $base-spacing / 4;
 $large-spacing: $base-spacing * 2;
 $xlarge-spacing: $base-spacing * 3;
 
+$default-transition-speed: 0.5s;
+
 @import "ionic.theme.default";
 @import "ionic.ionicons";
