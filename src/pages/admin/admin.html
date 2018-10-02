@@ -1,20 +1,31 @@
 <ion-header>
-    <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>
-        <i class="fa fa-cogs fixed-width space-right"></i>
-        <span>Admin</span>
-      </ion-title>
-    </ion-navbar>
-  </ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-cogs fixed-width space-right"></i>
+      <span>Admin</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
 <ion-content>
-    <main role="main">
-        <navigation activePage="Admin"></navigation>
-        <article>
-
-        </article>
-      </main>
-      <page-footer activePage="Admin"></page-footer>
+  <main role="main">
+    <navigation activePage="Admin"></navigation>
+    <article>
+      <h1>Admin</h1>
+      <div *ngIf="!this.auth.loggedIn">
+        <div id="passwordDiv">
+          <label>Admin Password:</label>
+          <input type="password" required [value]="adminPassword" (input)="adminPassword = $event.target.value" />
+          <button ion-button outline type="submit" (click)="login()">Login</button>
+        </div>
+      </div>
+      <div *ngIf="this.auth.loggedIn">
+        <p>Login successful.</p>
+        <button ion-button outline type="submit" (click)="logout()">Logout</button>
+      </div>
+    </article>
+  </main>
+  <page-footer activePage="Admin"></page-footer>
 </ion-content>
